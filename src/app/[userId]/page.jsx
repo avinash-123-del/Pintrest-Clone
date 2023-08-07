@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import app from '../../../Shared/firebaseConfig'
 import { collection, getFirestore, query, where ,getDocs} from 'firebase/firestore'
 import { doc, getDoc } from "firebase/firestore";
-import UserInfo from '../Components/userInfo';
+import UserInfo from '../Components/UserInfo';
 import PinsLIst from '../Components/PinsLIst';
 import { data } from 'autoprefixer';
 const page = ({ params }) => {

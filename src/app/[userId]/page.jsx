@@ -1,4 +1,4 @@
-// 'use client'
+'use client'
 import React, { useEffect, useState } from 'react'
 import app from '../../../Shared/firebaseConfig'
 import { collection, getFirestore, query, where ,getDocs} from 'firebase/firestore'
@@ -11,7 +11,7 @@ const UserId = ({ params }) => {
     const [userInfo,setUserInfo] = useState(null)
     const [listOfPins,setListOfPins] = useState([])
     const [loading,setLoading] = useState(true)
-    
+
     const db = getFirestore(app)
 
 

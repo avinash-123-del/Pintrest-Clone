@@ -7,7 +7,7 @@ import PinsLIst from './Components/PinsLIst'
 // import { signOut, useSession } from 'next-auth/react'
 // import { useRouter } from 'next/navigation'
 
-const page = () => {
+const MainPage = () => {
   const [listOfPins,setListOfPins] = useState([])
   const db = getFirestore(app)
  const [loading,setLoading] = useState(true)
@@ -53,4 +53,4 @@ useEffect(() => {
   )
 }
 
-export default page
+export default MainPage

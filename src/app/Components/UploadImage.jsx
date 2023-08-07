@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { HiArrowUpCircle } from "react-icons/hi2";
+import Image from 'next/image';
 function UploadImage({ setFile }) {
   const [selectedFile, setSelectedFile] = useState();
 
@@ -19,7 +20,7 @@ function UploadImage({ setFile }) {
           </div>
           : null}
         {selectedFile ?
-          <img src={window.URL.createObjectURL(selectedFile)}
+          <Image src={window.URL.createObjectURL(selectedFile)}
             alt='selected-image'
             width={500}
             height={800}

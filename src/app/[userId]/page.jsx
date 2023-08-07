@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 import React, { useEffect, useState } from 'react'
 import app from '../../../Shared/firebaseConfig'
 import { collection, getFirestore, query, where ,getDocs} from 'firebase/firestore'
@@ -6,11 +6,12 @@ import { doc, getDoc } from "firebase/firestore";
 import UserInfo from '../Components/UserInfo';
 import PinsLIst from '../Components/PinsLIst';
 import { data } from 'autoprefixer';
-const page = ({ params }) => {
+const UserId = ({ params }) => {
 
     const [userInfo,setUserInfo] = useState(null)
     const [listOfPins,setListOfPins] = useState([])
     const [loading,setLoading] = useState(true)
+    
     const db = getFirestore(app)
 
 
@@ -76,4 +77,4 @@ const page = ({ params }) => {
     )
 }
 
-export default page
+export default UserId

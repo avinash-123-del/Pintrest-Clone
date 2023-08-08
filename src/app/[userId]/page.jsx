@@ -5,7 +5,6 @@ import { collection, getFirestore, query, where ,getDocs} from 'firebase/firesto
 import { doc, getDoc } from "firebase/firestore";
 import UserInfo from '../Components/UserInfo';
 import PinsLIst from '../Components/PinsLIst';
-import { data } from 'autoprefixer';
 const UserId = ({ params }) => {
 
     const [userInfo,setUserInfo] = useState(null)
